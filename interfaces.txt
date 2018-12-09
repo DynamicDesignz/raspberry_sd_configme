@@ -1,0 +1,14 @@
+# Hotspot
+		auto lo
+		auto wlan0
+
+		iface lo inet loopback
+		iface eth0 inet dhcp
+
+		allow-hotplug wlan0
+		iface wlan0 inet dhcp
+				wpa-ssid "Dynamic-J7V"
+				wpa-psk "Slacker6083!"
+
+		iface default inet dhcp
+	

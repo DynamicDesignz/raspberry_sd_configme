@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo "Executing Raspberry Pi First Run Script"
+
+#Remove Bloatware
+echo "Removing Bloatware"
+sudo apt-get remove --purge libreoffice* minecraft* sonic-pi* claws-mail* bluej* ed* geany* greenfoot* leafpad* scratch* nutscratch* sense-hat* squeak* wolfram-engine*
+
+#Making Clean
+echo "Make Clean..."
+sudo apt-get clean && sudo apt-get autoremove
+
+#Install Custom Packages
+echo "Installing Custom Packages..."
+sudo apt-get install -y nautilus gparted lsof synaptic ftpd locate gedit ntfs-3g exfat-fuse usbmount detox lynx pandoc googler 
