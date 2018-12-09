@@ -1,0 +1,7 @@
+Autoconfig rPi SD Card
+
+interfaces config script
+
+wpa_supplicant.conf config script
+
+touch ssh file to SD card
